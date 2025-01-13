@@ -1,5 +1,4 @@
-# Car-Gallery & Customizer HTML5, CSS3, Bootstrap 5 JavaScript(jQuery for dynamic functionality) 
-
+# Car-Gallery & Customizer 
 The Car Customizer Website allows users to explore, customize, and view car details interactively. It features a multi-step customization process, a dedicated car profile page, and a modern, responsive design.
 
 # Features
