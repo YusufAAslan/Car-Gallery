@@ -1,0 +1,77 @@
+body {
+    background-color: #f8f9fa;
+    
+}
+
+.card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.tab-pane h3 {
+    margin-bottom: 20px;
+    font-family: 'Dancing Script', cursive; /* Apply Dancing Script font */
+
+}
+
+#summaryList li {
+    margin-bottom: 10px;
+}
+
+/* Navbar Styling */
+.navbar {
+    font-family: 'Dancing Script', cursive; /* Apply Dancing Script font */
+
+    background: linear-gradient(90deg, #6c757d, #f8f9fa, #000); /* Smooth gradient transition */
+    padding: 10px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+}
+
+.navbar-brand {
+    
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navbar-brand img {
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 50%; /* Rounded logo */
+}
+
+.navbar .nav-link {
+    
+    
+    color: rgba(255, 255, 255, 0.8); /* Softer white */
+    font-size: 16px;
+    margin-left: 15px;
+    transition: color 0.3s ease, transform 0.3s ease; /* Add hover animation */
+}
+
+.navbar .nav-link:hover {
+    color: #fff; /* Brighter white on hover */
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
+
+.gradient-btn {
+    background: linear-gradient(90deg, #6c757d,  #000); /* Smooth gradient */
+    border: none; /* Remove border */
+    color: white; /* Set text color to white */
+    font-weight: bold; /* Bold text */
+    padding: 8px 16px; /* Add padding */
+    border-radius: 5px; /* Add rounded corners */
+    transition: background 0.3s ease, transform 0.2s ease; /* Smooth hover effect */
+}
+
+.gradient-btn:hover {
+    background: linear-gradient(90deg, #000, #6c757d, #f8f9fa); /* Reverse gradient on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+.nav-tabs .nav-link {
+    color: #6c757d; /* Replace this with your desired color (e.g., gray) */
+}

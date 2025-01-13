@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Customizer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a class="navbar-brand" href="#">
+            <img src="images/logo.png" alt="Car Logo">
+            Alaa Cars
+        </a>
+        <div class="d-flex">
+            <a class="nav-link" href="#">Home</a>
+            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="#">Contact</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- Navigation -->
+        <ul class="nav nav-tabs mt-4" id="carTabs" role="tablist">
+            <li class="nav-item">
+                <button class="nav-link active" id="models-tab" data-bs-toggle="tab" data-bs-target="#models" type="button" role="tab">Models</button>
+            </li>
+            <li class="nav-item">
+                <button class="nav-link" id="colors-tab" data-bs-toggle="tab" data-bs-target="#colors" type="button" role="tab">Colors</button>
+            </li>
+            <li class="nav-item">
+                <button class="nav-link" id="accessories-tab" data-bs-toggle="tab" data-bs-target="#accessories" type="button" role="tab">Accessories</button>
+            </li>
+            <li class="nav-item">
+                <button class="nav-link" id="summary-tab" data-bs-toggle="tab" data-bs-target="#summary" type="button" role="tab">Summary</button>
+            </li>
+        </ul>
+
+        <!-- Tab Content -->
+        <div class="tab-content mt-3" id="carTabsContent">
+            <!-- Models Tab -->
+            <div class="tab-pane fade show active" id="models" role="tabpanel">
+                <h3>Select a Model</h3>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="images/car-red.png" class="card-img-top" alt="Model Ibiza">
+                            <div class="card-body">
+                                <h5 class="card-title">Ibiza</h5>
+                                <p class="card-text">Starting at 193,500 TL</p>
+                                <button class="btn gradient-btn select-model" data-model="Ibiza" data-price="193,500 TL" data-image="images/car-red.png">Select</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="images/car-orange.png" class="card-img-top" alt="Model Arona">
+                            <div class="card-body">
+                                <h5 class="card-title">Arona</h5>
+                                <p class="card-text">Starting at 210,000 TL</p>
+                                <button class="btn gradient-btn select-model" data-model="Arona" data-price="210,000 TL" data-image="images/car-orange.png">Select</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="images/car-red.png" class="card-img-top" alt="Model Audi">
+                            <div class="card-body">
+                                <h5 class="card-title">Audi</h5>
+                                <p class="card-text">Starting at 193,500 TL</p>
+                                <button class="btn gradient-btn select-model" data-model="Audi" data-price="193,500 TL" data-image="images/car-red.png">Select</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Colors Tab -->
+            <div class="tab-pane fade" id="colors" role="tabpanel">
+                <h3>Select a Color</h3>
+                <div class="d-flex justify-content-center">
+                    <button class="btn btn-danger select-color mx-2" data-color="Red">Red</button>
+                    <button class="btn btn-warning select-color mx-2" data-color="Orange">Orange</button>
+                </div>
+            </div>
+
+            <!-- Accessories Tab -->
+            <div class="tab-pane fade" id="accessories" role="tabpanel">
+                <h3>Select Accessories</h3>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="images/accessories/accessory1.png" class="card-img-top" alt="Accessory 1">
+                            <div class="card-body">
+                                <p class="card-text">Seat Free Sync Pack - 7,500 TL</p>
+                                <button class="btn btn-primary select-accessory" data-accessory="Accessory 1">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="images/accessories/accessory2.png" class="card-img-top" alt="Accessory 2">
+                            <div class="card-body">
+                                <p class="card-text">Boost Pack - 13,700 TL</p>
+                                <button class="btn btn-primary select-accessory" data-accessory="Accessory 2">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Summary Tab -->
+            <div class="tab-pane fade" id="summary" role="tabpanel">
+                <h3>Summary</h3>
+                <ul id="summaryList">
+                    <li>Model: <span id="summaryModel"></span></li>
+                    <li>Color: <span id="summaryColor"></span></li>
+                    <li>Accessories: <span id="summaryAccessories"></span></li>
+                </ul>
+                <h4>Total: <span id="summaryTotal">193,500 TL</span></h4>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
